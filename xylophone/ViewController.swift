@@ -63,7 +63,7 @@ class ViewController: UIViewController {
     func playSound(soundName: String) {
         let url = Bundle.main.url(forResource: soundName, withExtension: "wav")
         player = try! AVAudioPlayer(contentsOf: url!)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 6.0)
         {
             self.player?.play()
         }
